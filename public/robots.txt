@@ -1,0 +1,42 @@
+# Film Dong - Robots.txt
+# Updated: 2026-01-21
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Social Media Bots
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# All other bots
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Disallow player pages (duplicate content prevention)
+Disallow: /play/
+Disallow: /watch/
+Disallow: /putar/
+
+# Disallow private pages
+Disallow: /history
+
+# Disallow API-like paths
+Disallow: /*?sv=
+Disallow: /*?page=
+
+# Sitemap location
+Sitemap: https://filmdong.lovable.app/sitemap.xml
